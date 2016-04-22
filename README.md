@@ -8,7 +8,7 @@ A la racine du site récupérer le projet :
 ```
 git init
 git remote add origin https://github.com/iss936/pc-discount.git
-git pull
+git pull origin master
 ```
 
 Ensuite dans la dans phpMyAdmin, ajoutez le thème du projet à liste des thèmes
