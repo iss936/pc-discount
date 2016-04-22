@@ -6,6 +6,7 @@
 
 # Ignore everything in the root except modules, themes and override.
 /*
+!.gitingore
 !modules/
 !themes/
 !override/
