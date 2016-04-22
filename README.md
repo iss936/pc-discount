@@ -7,6 +7,7 @@
 A la racine du site récupérer le projet : 
 ```
 git init
+rm README.md
 git remote add origin https://github.com/iss936/pc-discount.git
 git pull origin master
 ```
