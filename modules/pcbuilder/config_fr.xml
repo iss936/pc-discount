@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>pcbuilder</name>
+	<displayName><![CDATA[Pc builder]]></displayName>
+	<version><![CDATA[1]]></version>
+	<description><![CDATA[Assembler votre Pc.]]></description>
+	<author><![CDATA[Soumare Issa]]></author>
+	<tab><![CDATA[Test]]></tab>
+	<confirmUninstall><![CDATA[Voulez-vous vraiment supprimer ce module]]></confirmUninstall>
+	<is_configurable>0</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

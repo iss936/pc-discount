@@ -32,7 +32,7 @@ $_MODULE['<{statsforecast}prestashop>statsforecast_a34f9feb654595d53807df17b041d
 $_MODULE['<{statsforecast}prestashop>statsforecast_42de3b7ec2450ded7d6c600b359def52'] = 'En moyenne, chaque visiteur fait une commande de ce montant :';
 $_MODULE['<{statsforecast}prestashop>statsforecast_c06cbe5e69067225dbcab04fb85200fa'] = 'En moyenne, chaque visiteur enregistré fait une commande de ce montant :';
 $_MODULE['<{statsforecast}prestashop>statsforecast_3fa6443ce3f838b6901b70cd812abf0d'] = 'Répartition par modes de paiement';
-$_MODULE['<{statsforecast}prestashop>statsforecast_cbb3a9a8d0b10c0618904ce4ecb08716'] = 'Les montants sont TTC de sorte à ce que vous puissiez avoir une estimation de la commission due au service de paiement utilisé.';
+$_MODULE['<{statsforecast}prestashop>statsforecast_cbb3a9a8d0b10c0618904ce4ecb08716'] = 'Les montants sont TTC de sorte à ce que vous puissiez avoir une estimation de la commission due au moyen de paiement utilisé.';
 $_MODULE['<{statsforecast}prestashop>statsforecast_e6e42855066e7a3ae050b2c698021b14'] = 'Zone :';
 $_MODULE['<{statsforecast}prestashop>statsforecast_5ed26836c96d7dcae8a40307e8e250c3'] = 'Aucun filtre';
 $_MODULE['<{statsforecast}prestashop>statsforecast_e55f75a29310d7b60f7ac1d390c8ae42'] = 'Module';

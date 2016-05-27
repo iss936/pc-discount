@@ -11,7 +11,7 @@ $_MODULE['<{onboarding}prestashop>backoffice_top_9a12f893e37f0f1fb9fb04bf16a7d78
 $_MODULE['<{onboarding}prestashop>backoffice_top_4cf1a5e51827d65ded27c32d4213b12e'] = 'Vous pouvez d\'ores et déjà accepter des paiements par carte grâce à PrestaShop Payments by Hipay. D\'autres moyens de paiement sont aussi disponibles, assurez-vous de bien les paramétrer !';
 $_MODULE['<{onboarding}prestashop>backoffice_top_0429b4766bfd2e6540dc3cb5537387ff'] = 'Choisissez les solutions de paiement que vous souhaitez proposer à vos clients, et gérez les différentes restrictions que vous pouvez appliquer (par devise, par pays ou par groupes de clients).';
 $_MODULE['<{onboarding}prestashop>backoffice_top_e62f682bcf70125635d8915ea127fe9b'] = 'Si vous avez besoin de plus d\'informations, vous pouvez toujours consulter la Documentation PrestaShop : cliquez sur "Aide" en haut à droite de votre back-office !';
-$_MODULE['<{onboarding}prestashop>backoffice_top_d26019e187250752a24c5f07694bda99'] = 'Vous avez suivi les premières étapes essentielles pour configurer votre boutique en ligne. Vous pouvez à nouveau les passer en revue si vous avez d\'autres produits, solutions de paiement ou transporteurs à ajouter.[1]Pour aller plus loin dans la configuration de votre boutique, vous pouvez suivre les [2]Premiers pas avec PrestaShop 1.6[/2] de notre Guide de l\'utilisateur.[1]Quand vous êtes sûr que votre boutique est fin prête, cliquez sur le bouton "Lancer" pour rendre votre boutique publique.';
+$_MODULE['<{onboarding}prestashop>backoffice_top_d26019e187250752a24c5f07694bda99'] = 'Vous avez suivi les premières étapes essentielles pour configurer votre boutique en ligne. Vous pouvez à nouveau les passer en revue si vous avez d\'autres produits, moyens de paiement ou transporteurs à ajouter.[1]Pour aller plus loin dans la configuration de votre boutique, vous pouvez suivre les [2]Premiers pas avec PrestaShop 1.6[/2] de notre Guide de l\'utilisateur.[1]Quand vous êtes sûr que votre boutique est fin prête, cliquez sur le bouton "Lancer" pour rendre votre boutique publique.';
 $_MODULE['<{onboarding}prestashop>backoffice_top_82269147f55aa394633d8ffab65a8524'] = 'C\'est parti !';
 $_MODULE['<{onboarding}prestashop>backoffice_top_d51786a260fac2376360796f7c79b076'] = 'C\'est bon pour moi, on peut lancer !';
 $_MODULE['<{onboarding}prestashop>backoffice_top_3eb86a3e1dc693b55502d7391aae5cbf'] = 'Vu, allons à l\'étape suivante';
@@ -43,9 +43,9 @@ $_MODULE['<{onboarding}prestashop>backoffice_top_7b98227ffa8c57c1b7cedfb6065833b
 $_MODULE['<{onboarding}prestashop>backoffice_top_e684454ccd86011ad208c4d78bbd7861'] = 'Si votre catalogue existe déjà sous format .CSV, gagnez du temps et faites un import !';
 $_MODULE['<{onboarding}prestashop>backoffice_top_30ae23ab5d1b9b02aeac19255cb4bbf8'] = 'OK, direction mon catalogue';
 $_MODULE['<{onboarding}prestashop>backoffice_top_af72bbd773d9516f0b4b0f56c7f88be4'] = 'Continuer l\'ajout de produits';
-$_MODULE['<{onboarding}prestashop>backoffice_top_8497f6af90ba868416219ad993db929e'] = 'Paramétrez vos solutions de paiement';
-$_MODULE['<{onboarding}prestashop>backoffice_top_72b6798bba9dcd1a791794993d420176'] = 'Voir les solutions de paiement';
-$_MODULE['<{onboarding}prestashop>backoffice_top_96ae5a401a41ca3d9a6d57618021d9ee'] = 'Continuer avec les solutions de paiement';
+$_MODULE['<{onboarding}prestashop>backoffice_top_8497f6af90ba868416219ad993db929e'] = 'Paramétrez vos moyens de paiement';
+$_MODULE['<{onboarding}prestashop>backoffice_top_72b6798bba9dcd1a791794993d420176'] = 'Voir les moyens de paiement';
+$_MODULE['<{onboarding}prestashop>backoffice_top_96ae5a401a41ca3d9a6d57618021d9ee'] = 'Continuer avec les moyens de paiement';
 $_MODULE['<{onboarding}prestashop>backoffice_top_a76f0bf03508b84c2bf7f9e3282eb097'] = 'Paramétrez vos transporteurs';
 $_MODULE['<{onboarding}prestashop>backoffice_top_60037e39c43a94445bd3e0d8d7ec38f3'] = 'A moins que vous ne vendiez des produits virtuels, vous devez enregistrer vos transporteurs partenaires dans PrestaShop.';
 $_MODULE['<{onboarding}prestashop>backoffice_top_9cec8ecea187a33fd3df36d40c14c702'] = 'Sans quoi vos clients ne pourront pas profiter de vos produits !';
