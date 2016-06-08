@@ -8604,12 +8604,19 @@ body .sf-menu > li.sfHoverForce > a {
 }
 
 body .sf-menu > li > ul > li > a:hover {
-    color: #445293;
+    color: #0098C9;
 }
 
 body #header .cart_block,
 body #header .cart_block .cart-buttons,
 body #header .cart_block .cart-prices {
     background: #303647;
+}
+
+body #contact-link a:hover,
+body #contact-link a.active,
+body .header_user_info a:hover,
+body .header_user_info a.active {
+    background-color: #0098C9;
 }
 /*# sourceMappingURL=global.css.map */
