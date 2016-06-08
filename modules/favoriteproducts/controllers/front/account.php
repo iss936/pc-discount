@@ -1,5 +1,6 @@
-{*
-* 2007-2016 PrestaShop
+<?php
+/*
+* 2007-2015 PrestaShop
 *
 * NOTICE OF LICENSE
 *
@@ -18,23 +19,36 @@
 * needs please refer to http://www.prestashop.com for more information.
 *
 *  @author PrestaShop SA <contact@prestashop.com>
-*  @copyright  2007-2016 PrestaShop SA
+*  @copyright  2007-2015 PrestaShop SA
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
-*}
+*/
 
-<li class="category_{$node.id}{if isset($last) && $last == 'true'} last{/if}">
-	<a href="{$node.link|escape:'html':'UTF-8'}" {if isset($currentCategoryId) && $node.id == $currentCategoryId}class="selected"{/if}
-		title="{$node.desc|strip_tags|trim|truncate:255:'...'|escape:'html':'UTF-8'}">{$node.name|escape:'html':'UTF-8'}</a>
-	{if $node.children|@count > 0}
-		<ul>
-		{foreach from=$node.children item=child name=categoryTreeBranch}
-			{if $smarty.foreach.categoryTreeBranch.last}
-				{include file="$branche_tpl_path" node=$child last='true'}
-			{else}
-				{include file="$branche_tpl_path" node=$child last='false'}
-			{/if}
-		{/foreach}
-		</ul>
-	{/if}
-</li>
+/**
+ * @since 1.5.0
+ */
+class FavoriteproductsAccountModuleFrontController extends ModuleFrontController
+{
+	public $ssl = true;
+
+	public function init()
+	{
+		parent::init();
+
+		require_once($this->module->getLocalPath().'FavoriteProduct.php');
+	}
+
+	public function initContent()
+	{
+		parent::initContent();
+
+		if (!Context::getContext()->customer->isLogged())
+			Tools::redirect('index.php?controller=authentication&redirect=module&module=favoriteproducts&action=account');
+
+		if (Context::getContext()->customer->id)
+		{
+			$this->context->smarty->assign('favoriteProducts', FavoriteProduct::getFavoriteProducts((int)Context::getContext()->customer->id, (int)Context::getContext()->language->id));
+			$this->setTemplate('favoriteproducts-account.tpl');
+		}
+	}
+}

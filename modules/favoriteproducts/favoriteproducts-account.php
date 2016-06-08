@@ -1,5 +1,6 @@
-{*
-* 2007-2016 PrestaShop
+<?php
+/*
+* 2007-2015 PrestaShop
 *
 * NOTICE OF LICENSE
 *
@@ -18,23 +19,23 @@
 * needs please refer to http://www.prestashop.com for more information.
 *
 *  @author PrestaShop SA <contact@prestashop.com>
-*  @copyright  2007-2016 PrestaShop SA
+*  @copyright  2007-2015 PrestaShop SA
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
-*}
+*/
 
-<li class="category_{$node.id}{if isset($last) && $last == 'true'} last{/if}">
-	<a href="{$node.link|escape:'html':'UTF-8'}" {if isset($currentCategoryId) && $node.id == $currentCategoryId}class="selected"{/if}
-		title="{$node.desc|strip_tags|trim|truncate:255:'...'|escape:'html':'UTF-8'}">{$node.name|escape:'html':'UTF-8'}</a>
-	{if $node.children|@count > 0}
-		<ul>
-		{foreach from=$node.children item=child name=categoryTreeBranch}
-			{if $smarty.foreach.categoryTreeBranch.last}
-				{include file="$branche_tpl_path" node=$child last='true'}
-			{else}
-				{include file="$branche_tpl_path" node=$child last='false'}
-			{/if}
-		{/foreach}
-		</ul>
-	{/if}
-</li>
+/**
+ * @deprecated 1.5.0 This file is deprecated, use moduleFrontController instead
+ */
+
+/* SSL Management */
+$useSSL = true;
+
+require('../../config/config.inc.php');
+Tools::displayFileAsDeprecated();
+
+// init front controller in order to use Tools::redirect
+$controller = new FrontController();
+$controller->init();
+
+Tools::redirect(Context::getContext()->link->getModuleLink('favoriteproducts', 'account'));

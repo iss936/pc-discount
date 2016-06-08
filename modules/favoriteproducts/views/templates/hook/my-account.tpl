@@ -1,5 +1,5 @@
 {*
-* 2007-2016 PrestaShop
+* 2007-2015 PrestaShop
 *
 * NOTICE OF LICENSE
 *
@@ -18,23 +18,14 @@
 * needs please refer to http://www.prestashop.com for more information.
 *
 *  @author PrestaShop SA <contact@prestashop.com>
-*  @copyright  2007-2016 PrestaShop SA
+*  @copyright  2007-2015 PrestaShop SA
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-<li class="category_{$node.id}{if isset($last) && $last == 'true'} last{/if}">
-	<a href="{$node.link|escape:'html':'UTF-8'}" {if isset($currentCategoryId) && $node.id == $currentCategoryId}class="selected"{/if}
-		title="{$node.desc|strip_tags|trim|truncate:255:'...'|escape:'html':'UTF-8'}">{$node.name|escape:'html':'UTF-8'}</a>
-	{if $node.children|@count > 0}
-		<ul>
-		{foreach from=$node.children item=child name=categoryTreeBranch}
-			{if $smarty.foreach.categoryTreeBranch.last}
-				{include file="$branche_tpl_path" node=$child last='true'}
-			{else}
-				{include file="$branche_tpl_path" node=$child last='false'}
-			{/if}
-		{/foreach}
-		</ul>
-	{/if}
+<li class="favoriteproducts">
+	<a href="{$link->getModuleLink('favoriteproducts', 'account')|escape:'html':'UTF-8'}" title="{l s='My favorite products.' mod='favoriteproducts'}">
+		{if !$in_footer}<img {if isset($mobile_hook)}src="{$module_template_dir}img/favorites.png" class="ui-li-icon ui-li-thumb"{else}src="{$module_template_dir}img/favorites.png" class="icon"{/if} alt="{l s='My favorite products.' mod='favoriteproducts'}"/>{/if}
+		{l s='My favorite products.' mod='favoriteproducts'}
+	</a>
 </li>
