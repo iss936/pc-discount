@@ -8,7 +8,7 @@ table#product_comparison tbody tr td.product-block {
 table#product_comparison tbody tr td.td_empty,
 table#product_comparison tbody tr td.feature-name, table#product_comparison tbody tr.comparison_header {
   background: #fbfbfb;
-  color: #333; }
+  color: #222558; }
 table#product_comparison tbody tr td.comparison_infos {
   text-align: center; }
   table#product_comparison tbody tr td.comparison_infos div.center {
@@ -60,7 +60,7 @@ table#product_comparison .button-container a, table#product_comparison .button-c
 table#product_comparison .comparison_unit_price {
   font-size: 17px;
   font-family: "Open Sans", sans-serif;
-  color: #333;
+  color: #222558;
   font-style: italic; }
 table#product_comparison .product-rating {
   width: 80px;
