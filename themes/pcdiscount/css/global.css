@@ -8580,9 +8580,19 @@ body #header .shopping_cart > a:first-child:after {
     color: white;
 }
 
+body .sf-menu {
+    background: none;
+}
+
 body .sf-menu > li > a,
 body .sf-menu > li > ul > li > a {
     color: #222558;
+}
+
+body .sf-menu,
+body .sf-menu > li,
+body .sf-menu > li > a {
+    border: none;
 }
 
 body .sf-menu > li.sfHover > a,
@@ -8597,4 +8607,9 @@ body .sf-menu > li > ul > li > a:hover {
     color: #445293;
 }
 
+body #header .cart_block,
+body #header .cart_block .cart-buttons,
+body #header .cart_block .cart-prices {
+    background: #303647;
+}
 /*# sourceMappingURL=global.css.map */
