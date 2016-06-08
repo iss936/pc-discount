@@ -8619,4 +8619,15 @@ body .header_user_info a:hover,
 body .header_user_info a.active {
     background-color: #0098C9;
 }
+
+::selection{
+    background-color: #0098C9;
+    color: #fff;
+}
+
+/* Firefox */
+::-moz-selection {
+    background-color: #0098C9;
+    color: #fff;
+}
 /*# sourceMappingURL=global.css.map */
