@@ -119,6 +119,7 @@ class HighlightItem extends Module
 
 	public function hookDisplayHome($params)
 	{
+        global $cookie;
 		if (!$this->isCached('highlightitem.tpl', $this->getCacheId()))
 		{
 			$this->_cacheProducts();
@@ -126,23 +127,18 @@ class HighlightItem extends Module
 
             $link = new Link();
             $url = $link->getProductLink($item->id);
-
             $image = Image::getCover($item->id);
-            $link_image = new Link;//because getImageLInk is not static function
-            $product = new Product($item->id, false, Context::getContext()->language->id);
-            $imagePath = $link_image->getImageLink($product->link_rewrite, $image['id_image'], 'home_default');
+            $price = (round($item->getPrice(true), 2)) . '0';
+            $currency = new CurrencyCore($cookie->id_currency);
+            $currency_iso = $currency->sign;
 
-            //var_dump($item);
             $highlight['name'] = $item->name;
             $highlight['description'] = $item->description;
             $highlight['link'] = $url;
-            $highlight['available_for_order'] = $item->available_for_order;
-            $highlight['minimal_quantity'] = $item->minimal_quantity;
-            $highlight['customizable'] = $item->customizable;
-            $highlight['quantity'] = $item->quantity;
             $highlight['id'] = $item->id;
-            $highlight['price'] = $item->id;
-            $highlight['image'] = $imagePath;
+            $highlight['price'] = $price;
+            $highlight['currency'] = $currency_iso;
+            $highlight['image'] = Link::getImageLink($item->link_rewrite, $image['id_image'], 'home_default');
 
 			$this->smarty->assign(
 				array(
