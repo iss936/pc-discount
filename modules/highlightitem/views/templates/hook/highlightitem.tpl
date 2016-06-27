@@ -1,6 +1,5 @@
 <div id="highlight-products_block_center" class="block products_block clearfix">
     {if isset($product_highlight) AND $product_highlight}
-        {var_dump($product_highlight)}
         <div class="block_content">
             <a href="{$product_highlight['link']|escape:'html'}" title="{$product_highlight['name']|escape:html:'UTF-8'}" class="featured-highlight">
                 <div class="highlight-image">
