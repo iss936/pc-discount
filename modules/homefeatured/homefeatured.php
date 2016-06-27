@@ -139,6 +139,12 @@ class HomeFeatured extends Module
 		if (!$this->isCached('tab.tpl', $this->getCacheId('homefeatured-tab')))
 			$this->_cacheProducts();
 
+        $category = new Category((int)Configuration::get('HOME_FEATURED_CAT'), (int)Context::getContext()->language->id);
+        $this->smarty->assign(
+            array(
+                'name' => $category->name,
+            )
+        );
 		return $this->display(__FILE__, 'tab.tpl', $this->getCacheId('homefeatured-tab'));
 	}
 
@@ -147,8 +153,11 @@ class HomeFeatured extends Module
 		if (!$this->isCached('homefeatured.tpl', $this->getCacheId()))
 		{
 			$this->_cacheProducts();
+            $category = new Category((int)Configuration::get('HOME_FEATURED_CAT'), (int)Context::getContext()->language->id);
+
 			$this->smarty->assign(
 				array(
+                    'category' => $category->name,
 					'products' => HomeFeatured::$cache_products,
 					'add_prod_display' => Configuration::get('PS_ATTRIBUTE_CATEGORY_DISPLAY'),
 					'homeSize' => Image::getSize(ImageType::getFormatedName('home')),

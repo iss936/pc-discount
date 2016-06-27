@@ -23,6 +23,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 {if isset($products) && $products}
+    <h4 class="homefeatured">{l s='Popular category' mod='homefeatured'} <span class="highlight">{$category}</span></h4>
 	{include file="$tpl_dir./product-list.tpl" class='homefeatured tab-pane' id='homefeatured'}
 {else}
 <ul id="homefeatured" class="homefeatured tab-pane">

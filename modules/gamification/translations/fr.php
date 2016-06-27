@@ -2,7 +2,8 @@
 
 global $_MODULE;
 $_MODULE = array();
-
+$_MODULE['<{gamification}prestashop>gamification_3d4aafb2eedeba2fbf92e852f0af745a'] = 'Expertise PrestaShop';
+$_MODULE['<{gamification}prestashop>gamification_bacc1bf300527bad9c6ac2d3b875a8d8'] = 'Devenez un marchand accompli à pas de géant !';
 $_MODULE['<{gamification}prestashop>admingamificationcontroller_ca96b4f8d13722aac99da25f94ea1711'] = 'Votre Expertise PrestaShop';
 $_MODULE['<{gamification}prestashop>admingamificationcontroller_7258e7251413465e0a3eb58094430bde'] = 'Administration';
 $_MODULE['<{gamification}prestashop>admingamificationcontroller_3d4aafb2eedeba2fbf92e852f0af745a'] = 'Expertise PrestaShop';
@@ -15,8 +16,6 @@ $_MODULE['<{gamification}prestashop>admingamificationcontroller_38f7af7416ffcd15
 $_MODULE['<{gamification}prestashop>admingamificationcontroller_e7613fe56cdbeddfc9bb6276fd0f0d12'] = '4. Maître';
 $_MODULE['<{gamification}prestashop>admingamificationcontroller_8d03eaad7ff7babdd33c2c74fe479ed0'] = '5. Gourou';
 $_MODULE['<{gamification}prestashop>admingamificationcontroller_e4be4f3e3ae4ee9dda6b60815bf774c1'] = '6. Légende';
-$_MODULE['<{gamification}prestashop>gamification_3d4aafb2eedeba2fbf92e852f0af745a'] = 'Expertise PrestaShop';
-$_MODULE['<{gamification}prestashop>gamification_bacc1bf300527bad9c6ac2d3b875a8d8'] = 'Devenez un marchand accompli à pas de géant !';
 $_MODULE['<{gamification}prestashop>filters_e659b52eba1f0299b2d8ca3483919e72'] = 'Type :';
 $_MODULE['<{gamification}prestashop>filters_b1c94ca2fbc3e78fc30069c8d0f01680'] = 'Toutes';
 $_MODULE['<{gamification}prestashop>filters_24a23d787190f2c4812ff9ab11847a72'] = 'État :';
@@ -62,6 +61,3 @@ $_MODULE['<{gamification}prestashop>notification_bt_ca96b4f8d13722aac99da25f94ea
 $_MODULE['<{gamification}prestashop>notification_bt_16a1daea9e8873542aec1e820798aa44'] = 'Dernier badge gagné :';
 $_MODULE['<{gamification}prestashop>notification_bt_15377177c0259c6f79341cc57da13f19'] = 'Prochain badge :';
 $_MODULE['<{gamification}prestashop>notification_bt_f8978f781f97e6f851e9c8f7059c37b2'] = 'Voir mon profil complet';
-
-
-return $_MODULE;

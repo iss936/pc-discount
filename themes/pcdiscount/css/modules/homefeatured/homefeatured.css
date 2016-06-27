@@ -1,3 +1,12 @@
+h4.homefeatured {
+    background: none;
+    color: #777;
+    font-size: 27px;
+    font-weight: bold;
+}
 
+h4.homefeatured span.highlight {
+    color: #0098C9;
+}
 
 /*# sourceMappingURL=homefeatured.css.map */

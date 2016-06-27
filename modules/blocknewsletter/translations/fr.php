@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_9e31b08a00c1ed653bcaa517dee84714'] = 'Bloc newsletter';
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_ba457fab18d697d978befb95e827eb91'] = 'Ajoute un bloc newsletter pour vos clients';
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_396c88991101b5ca362932952293d291'] = 'Êtes-vous sûr de vouloir supprimer tous vos contacts ?';
@@ -56,7 +55,7 @@ $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_a307579714b75082f3f873497
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_d0da5609e4aebc5d532de97511a5a34a'] = 'Abonnés sans compte';
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_6395c19dc5a1cef9ca125b9736358dc7'] = 'Abonnés aux partenaires';
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_498bed86a7c58dcf1125dd21f40a6482'] = 'Filtre les clients selon s\'ils ont accepté ou pas de recevoir les offres de vos partenaires.';
-$_MODULE['<{blocknewsletter}prestashop>blocknewsletter_e72237358bd145d6dba764c39e53bba5'] = 'Les "abonnés aux partenaires" ont accepté de recevoir les offres de vos partenaires.';
+$_MODULE['<{blocknewsletter}prestashop>blocknewsletter_e72237358bd145d6dba764c39e53bba5'] = 'Les \"abonnés aux partenaires\" ont accepté de recevoir les offres de vos partenaires.';
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_85d02b888be056b290282ab2021341dc'] = 'Non-abonnés aux partenaires';
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_dbb392a2dc9b38722e69f6032faea73e'] = 'Exporte un fichier CSV';
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_f6df4ad6dc4798f26d1f2460eef4f2e9'] = 'Rechercher des adresses';
@@ -69,13 +68,5 @@ $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_48e3d5f66961b621c78f709af
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_dca37b874cf34bd5ebcf1c2fdc59a8b4'] = 'ATTENTION : Lorsque vous ouvrez ce fichier .csv avec Excel, choisissez bien l\'encodage UTF-8 pour éviter les caractères anormaux.';
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_b40866b115d74009183e06fc86b5c014'] = 'Erreur : droits d\'écriture limités';
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_87b0ca57db642f4e7780174a6abdc37d'] = 'Aucun résultat trouvé !';
-$_MODULE['<{blocknewsletter}prestashop>list_action_enable_00d23a76e43b46dae9ec7aa9dcbebb32'] = 'Activé';
-$_MODULE['<{blocknewsletter}prestashop>list_action_enable_b9f5c797ebbf55adccdd8539a65a0241'] = 'Désactivé';
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_ffb7e666a70151215b4c55c6268d7d72'] = 'Lettre d\'informations';
 $_MODULE['<{blocknewsletter}prestashop>blocknewsletter_416f61a2ce16586f8289d41117a2554e'] = 'votre e-mail';
-$_MODULE['<{blocknewsletter}prestashop>blocknewsletter_d8335f4a5d918134bd0bdc47cc487d74'] = 'Saisissez votre adresse e-mail';
-$_MODULE['<{blocknewsletter}prestashop>blocknewsletter_a60852f204ed8028c1c58808b746d115'] = 'ok';
-$_MODULE['<{blocknewsletter}prestashop>blocknewsletter_590b7aefc83952e3483c5168bf93e19f'] = 'Newsletter : %1$s';
-
-
-return $_MODULE;
