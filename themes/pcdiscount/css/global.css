@@ -5976,7 +5976,6 @@ span.exclusive {
       display: block;
       padding: 3px 8px 3px 8px;
       border: none;
-      background-color: #222558;
       color: #fff;
   }
     .button.button-small span i {
@@ -5985,9 +5984,9 @@ span.exclusive {
       .button.button-small span i.right {
         margin-right: 0;
         margin-left: 5px; }
-    .button.button-small span:hover {
-      background: #445293;
-    }
+.button.button-small:hover {
+    background: #445293;
+}
 
 .button.button-medium {
   font-size: 17px;
