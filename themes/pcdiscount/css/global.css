@@ -5962,7 +5962,7 @@ span.exclusive {
 .btn[disabled]:hover {
   opacity: 0.3; }
 
-.button.button-small {
+.page-product-box .button.button-small {
   font: bold 13px/17px Arial, Helvetica, sans-serif;
   color: #fff;
   background: #222558;
@@ -5984,8 +5984,14 @@ span.exclusive {
       .button.button-small span i.right {
         margin-right: 0;
         margin-left: 5px; }
-.button.button-small:hover {
+.page-product-box .button.button-small:hover {
     background: #445293;
+}
+#button_order_cart {
+    background-color: transparent;
+}
+.cart-buttons a.button {
+    background: none;
 }
 
 .button.button-medium {
