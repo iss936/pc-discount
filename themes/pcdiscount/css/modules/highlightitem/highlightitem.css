@@ -1,0 +1,90 @@
+.highlight-description div.star {background: url(../../../img/star.png) no-repeat scroll 0 0 transparent}
+
+.highlight-description div.star_on {background: url(../../../img/star.png) no-repeat scroll 0 -12px transparent}
+
+#product_comments_block_extra .star_content div.star.star_on,
+#product_comments_block_tab .star_content div.star.star_on,
+.highlight-description div.star.star_on {
+    display: block; }
+#product_comments_block_extra .star_content div.star.star_on:after,
+#product_comments_block_tab .star_content div.star.star_on:after,
+.highlight-description div.star.star_on:after {
+    content: "\f005";
+    font-family: "FontAwesome";
+    display: inline-block;
+    color: #0098D3; }
+
+#product_comments_block_extra .star_content div.star.star_hover:after,
+#product_comments_block_tab .star_content div.star.star_hover:after,
+.highlight-description div.star.star_hover:after {
+    content: "\f005";
+    font-family: "FontAwesome";
+    display: inline-block;
+    color: #0098D3; }
+
+#highlight-products_block_center .block_content {
+    width: 90%;
+    margin: auto;
+    height: 250px;
+    background-color: #ecf1f9;
+    text-align: center;
+    padding-top: 10px;
+    color: #000;
+}
+
+#highlight-products_block_center .block_content .highlight-image {
+    width: 200px;
+    height: auto;
+    display: inline-block;
+}
+#highlight-products_block_center .block_content .highlight-image img {
+    width: 200px;
+    height: auto;
+}
+#highlight-products_block_center .block_content .highlight-image span.recommanded {
+    background-color: #0098C9;
+    color: #fff;
+    display: block;
+    width: 200px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px 0;
+}
+
+#highlight-products_block_center .block_content .highlight-description {
+    width: calc(100% - 420px);
+    height: auto;
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 10px;
+    text-align: left;
+}
+#highlight-products_block_center .block_content .highlight-description h5.s_title_block {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+#highlight-products_block_center .block_content .highlight-description div.products_desc {
+    background-color: #fff;
+    padding: 7px 5px;
+    height: 161px;
+}
+
+#highlight-products_block_center .block_content button.button-highlight {
+    width: 170px;
+    background-color: #222558;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 0;
+    vertical-align: super;
+    border: 0;
+    font-size: 12px;
+    display: inline-block;
+}
+#highlight-products_block_center .block_content button.button-highlight span.price {
+    color: #0098C9;
+    font-size: 18px;
+}
+
+/*# sourceMappingURL=highlightitem.css.map */

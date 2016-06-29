@@ -5965,19 +5965,20 @@ span.exclusive {
 .button.button-small {
   font: bold 13px/17px Arial, Helvetica, sans-serif;
   color: #fff;
-  background: #6f6f6f;
-  border: 1px solid;
-  border-color: #666666 #5f5f5f #292929 #5f5f5f;
+  background: #222558;
   padding: 0;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.24);
+  border: 0;
+  padding: 7px 5px;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0; }
   .button.button-small span {
-    display: block;
-    padding: 3px 8px 3px 8px;
-    border: 1px solid;
-    border-color: #8b8a8a; }
+      display: block;
+      padding: 3px 8px 3px 8px;
+      border: none;
+      background-color: #222558;
+      color: #fff;
+  }
     .button.button-small span i {
       vertical-align: 0px;
       margin-right: 5px; }
@@ -5985,8 +5986,8 @@ span.exclusive {
         margin-right: 0;
         margin-left: 5px; }
     .button.button-small span:hover {
-      background: #575757;
-      border-color: #303030 #303030 #666666 #444444; }
+      background: #445293;
+    }
 
 .button.button-medium {
   font-size: 17px;
@@ -6648,17 +6649,16 @@ table.table_block td {
   border-bottom: 1px solid #d6d4d4; }
 
 h3.page-product-heading {
-  color: #555454;
+  color: #777;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 20px;
-  padding: 14px 20px 17px;
+  padding: 14px 0px 17px;
   margin: 0 0 20px;
   position: relative;
-  border: 1px solid #d6d4d4;
-  border-bottom: none;
+  border-bottom: 1px solid #0098C9;
   background: #fbfbfb; }
 
 ul.footer_links {

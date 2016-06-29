@@ -4,7 +4,7 @@
   margin-bottom: 40px; }
 
 .top-hr {
-  background: #C4C4C4;
+  background: transparent;
   height: 5px;
   margin: 2px 0 31px; }
 
@@ -637,21 +637,25 @@ span.view_scroll_spacer {
 
 /* table_data_sheet */
 .table-data-sheet {
-  border-bottom: 1px solid #d6d4d4;
+  border-bottom: 1px solid #e8ecf7;
+  border-left: 1px solid #e8ecf7;
+  border-right: 1px solid #e8ecf7;
   width: 100%;
   margin: 0 0 20px;
   background: #fff; }
   .table-data-sheet tr {
-    border-top: 1px solid #d6d4d4; }
+    border-top: 1px solid #e8ecf7; }
     .table-data-sheet tr.even {
-      background: #fdfdfd; }
+      background: #e8ecf7; }
     .table-data-sheet tr td {
       padding: 10px 20px 11px; }
       .table-data-sheet tr td:first-child {
-        border-right: 1px solid #d6d4d4;
+        border-right: 1px solid #e8ecf7;
         width: 30%;
         font-weight: 700;
         color: #222558; }
+        .table-data-sheet tr.even td:first-child {
+            border-right: 1px solid #fff; }
 
 /* table product-discounts */
 table.table-product-discounts {

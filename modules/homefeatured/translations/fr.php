@@ -25,4 +25,4 @@ $_MODULE['<{homefeatured}prestashop>homefeatured_d3da97e2d9aee5c8fbe03156ad051c9
 $_MODULE['<{homefeatured}prestashop>homefeatured_4351cfebe4b61d8aa5efa1d020710005'] = 'Afficher';
 $_MODULE['<{homefeatured}prestashop>homefeatured_2d0f6b8300be19cf35e89e66f0677f95'] = 'Ajouter au panier';
 $_MODULE['<{homefeatured}prestashop>homefeatured_e0e572ae0d8489f8bf969e93d469e89c'] = 'Aucun produit phare';
-$_MODULE['<{homefeatured}prestashop>tab_e63fd914c9594e48b78208531541b980'] = 'Catégorie populaire';
+$_MODULE['<{homefeatured}prestashop>tab_2cc1943d4c0b46bfcf503a75c44f988b'] = 'Populaire';
