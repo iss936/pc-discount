@@ -134,7 +134,7 @@ $(document).ready(function()
 			items:'li:visible',
 			prev:'#view_scroll_left',
 			next:'#view_scroll_right',
-			axis:'x',
+			axis:'y',
 			offset:0,
 			start:0,
 			stop:true,
@@ -1008,7 +1008,7 @@ function refreshProductImages(id_product_attribute)
 	else
 		$('#wrapResetImages').stop(true, true).hide();
 
-	$('#thumbs_list_frame').width(parseInt($('#thumbs_list_frame >li').outerWidth(true) * $('#thumbs_list_frame >li').length) + 'px');
+	$('#thumbs_list_frame').height(parseInt($('#thumbs_list_frame >li').outerHeight(true) * $('#thumbs_list_frame >li').length) + 'px');
 	$('#thumbs_list').trigger('goto', 0);
 	serialScrollFixLock('', '', '', '', 0);
 }

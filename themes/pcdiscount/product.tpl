@@ -63,6 +63,45 @@
 		{/if}
 		<!-- left infos-->
 		<div class="pb-left-column col-xs-12 col-sm-4 col-md-5">
+
+            {if isset($images) && count($images) > 0}
+                <!-- thumbnails -->
+                <div id="views_block" class="clearfix {if isset($images) && count($images) < 2}hidden{/if}">
+                    {if isset($images) && count($images) > 2}
+                        <div class="view_scroll_spacer" style="margin-top:10px;">
+							<a id="view_scroll_left" class="" title="{l s='Other views'}" href="javascript:{ldelim}{rdelim}">
+                                {l s='Previous'}
+                            </a>
+						</div>
+
+                    {/if}
+                    <div id="thumbs_list">
+                        <ul id="thumbs_list_frame">
+                            {if isset($images)}
+                                {foreach from=$images item=image name=thumbnails}
+                                    {assign var=imageIds value="`$product->id`-`$image.id_image`"}
+                                    {if !empty($image.legend)}
+                                        {assign var=imageTitle value=$image.legend|escape:'html':'UTF-8'}
+                                    {else}
+                                        {assign var=imageTitle value=$product->name|escape:'html':'UTF-8'}
+                                    {/if}
+                                    <li id="thumbnail_{$image.id_image}"{if $smarty.foreach.thumbnails.last} class="last"{/if}>
+                                        <a{if $jqZoomEnabled && $have_image && !$content_only} href="javascript:void(0);" rel="{literal}{{/literal}gallery: 'gal1', smallimage: '{$link->getImageLink($product->link_rewrite, $imageIds, 'large_default')|escape:'html':'UTF-8'}',largeimage: '{$link->getImageLink($product->link_rewrite, $imageIds, 'thickbox_default')|escape:'html':'UTF-8'}'{literal}}{/literal}"{else} href="{$link->getImageLink($product->link_rewrite, $imageIds, 'thickbox_default')|escape:'html':'UTF-8'}"	data-fancybox-group="other-views" class="fancybox{if $image.id_image == $cover.id_image} shown{/if}"{/if} title="{$imageTitle}">
+                                            <img class="img-responsive" id="thumb_{$image.id_image}" src="{$link->getImageLink($product->link_rewrite, $imageIds, 'cart_default')|escape:'html':'UTF-8'}" alt="{$imageTitle}" title="{$imageTitle}"{if isset($cartSize)} height="{$cartSize.height}" width="{$cartSize.width}"{/if} itemprop="image" />
+                                        </a>
+                                    </li>
+                                {/foreach}
+                            {/if}
+                        </ul>
+                    </div>
+                    {if isset($images) && count($images) > 2}
+                        <div class="view_scroll_spacer" style="margin-top:-43px;"><a id="view_scroll_right" title="{l s='Other views'}" href="javascript:{ldelim}{rdelim}">
+                            {l s='Next'}
+                        </a></div>
+                    {/if}
+                </div> <!-- end views-block -->
+                <!-- end thumbnails -->
+            {/if}
 			<!-- product img-->
 			<div id="image-block" class="clearfix">
 				{if $product->new}
@@ -101,43 +140,7 @@
 					</span>
 				{/if}
 			</div> <!-- end image-block -->
-			{if isset($images) && count($images) > 0}
-				<!-- thumbnails -->
-				<div id="views_block" class="clearfix {if isset($images) && count($images) < 2}hidden{/if}">
-					{if isset($images) && count($images) > 2}
-						<span class="view_scroll_spacer">
-							<a id="view_scroll_left" class="" title="{l s='Other views'}" href="javascript:{ldelim}{rdelim}">
-								{l s='Previous'}
-							</a>
-						</span>
-					{/if}
-					<div id="thumbs_list">
-						<ul id="thumbs_list_frame">
-						{if isset($images)}
-							{foreach from=$images item=image name=thumbnails}
-								{assign var=imageIds value="`$product->id`-`$image.id_image`"}
-								{if !empty($image.legend)}
-									{assign var=imageTitle value=$image.legend|escape:'html':'UTF-8'}
-								{else}
-									{assign var=imageTitle value=$product->name|escape:'html':'UTF-8'}
-								{/if}
-								<li id="thumbnail_{$image.id_image}"{if $smarty.foreach.thumbnails.last} class="last"{/if}>
-									<a{if $jqZoomEnabled && $have_image && !$content_only} href="javascript:void(0);" rel="{literal}{{/literal}gallery: 'gal1', smallimage: '{$link->getImageLink($product->link_rewrite, $imageIds, 'large_default')|escape:'html':'UTF-8'}',largeimage: '{$link->getImageLink($product->link_rewrite, $imageIds, 'thickbox_default')|escape:'html':'UTF-8'}'{literal}}{/literal}"{else} href="{$link->getImageLink($product->link_rewrite, $imageIds, 'thickbox_default')|escape:'html':'UTF-8'}"	data-fancybox-group="other-views" class="fancybox{if $image.id_image == $cover.id_image} shown{/if}"{/if} title="{$imageTitle}">
-										<img class="img-responsive" id="thumb_{$image.id_image}" src="{$link->getImageLink($product->link_rewrite, $imageIds, 'cart_default')|escape:'html':'UTF-8'}" alt="{$imageTitle}" title="{$imageTitle}"{if isset($cartSize)} height="{$cartSize.height}" width="{$cartSize.width}"{/if} itemprop="image" />
-									</a>
-								</li>
-							{/foreach}
-						{/if}
-						</ul>
-					</div> <!-- end thumbs_list -->
-					{if isset($images) && count($images) > 2}
-						<a id="view_scroll_right" title="{l s='Other views'}" href="javascript:{ldelim}{rdelim}">
-							{l s='Next'}
-						</a>
-					{/if}
-				</div> <!-- end views-block -->
-				<!-- end thumbnails -->
-			{/if}
+
 			{if isset($images) && count($images) > 1}
 				<p class="resetimg clear no-print">
 					<span id="wrapResetImages" style="display: none;">
